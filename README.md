@@ -1,4 +1,4 @@
-![Demo Preview](assets/01.jpg)
+![Demo Preview](assets/thumbnail.png)
 
 
 
