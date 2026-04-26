@@ -117,23 +117,6 @@ const sectionAnimation = () => {
         );
 
 
-        // // Marquee Scaling Animation
-        // // Set initial scale
-        // gsap.set(marquee, {
-        //     scale: ANIMATION.MARQUEE.before,
-        // });
-        // // Scale animate on scroll
-        // gsap.fromTo(
-        //     marquee,
-        //     {
-        //         scale: ANIMATION.MARQUEE.before,
-        //     },
-        //     {
-        //         scale: ANIMATION.MARQUEE.after,
-        //         ...SHARED_SETTINGS,
-        //     }
-        // );
-
         marquees.forEach((marquee) => {
             // Marquee Scaling Animation
             // Set initial scale

@@ -110,6 +110,29 @@ header, footer {
     }
 }
 
+@media (max-width: 700px) {
+    header, footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1.2rem;
+        padding: 2.4rem;
+
+        & nav {
+            gap: 1.2rem;
+        }
+
+        & h1, & a {
+            font-size: 1rem;
+        }
+
+        & h1 {
+            text-wrap: balance;
+        }
+    }
+}
+
+
 header {
     --dir: bottom;
 
@@ -167,3 +190,5 @@ h3 {
     font-weight: 400;
     font-style: normal;
 }
+
+
