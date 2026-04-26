@@ -41,3 +41,28 @@ This is a static project, so you can open `index.html` directly in your browser.
 - If images do not appear, confirm files exist in `assets/` and paths match `index.html`.
 - If scrolling/animation does not work, check browser console for blocked CDN requests.
 - If styling looks wrong, verify both `reset.css` and `styles.css` are loading.
+
+
+## Credits
+
+- Images are owned by the client and are licensed only for use in this tutorial repository and its live GitHub demo. You may download the project and use the images locally for learning purposes only. Any other use, reproduction, redistribution, or commercial use outside this tutorial is strictly prohibited.
+
+
+## Connect
+**Joe Ben Taylor (this project author)**
+
+- [Dribbble](https://dribbble.com/joebentaylor)
+- [Website](https://joebentaylor.co.uk)
+- [GitHub @joebentaylor1995](https://github.com/joebentaylor1995)
+- [LinkedIn](https://www.linkedin.com/in/joebentaylor)
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software for any purpose, subject to the following conditions:
+
+- **Images:** The images in the `assets/` directory are owned by the client and licensed **only for use in this tutorial repository and its live GitHub demo**.  
+  **You may not redistribute, reproduce, or use the images for any other purpose.**
+
+Copyright (c) Joe Ben Taylor
