@@ -26,6 +26,8 @@
 html, body {
     /* Easy rems, 1rem - 10px */
     font-size: 62.5%;
+    background: var(--black);
+    color: var(--white);
 }
 
 .wrapper {
