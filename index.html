@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codrops Article</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <h1>Building an Infinite Scroll and Parallax Experience with Lenis and GSAP</h1>
+
+                <nav>
+                    
+                    <a href="#">Tutorial</a>
+                    <a href="#">Github</a>
+                    <a href="#">All Demos</a>
+                </nav>
+            </header>
+
+
+            <section class="hero">
+                <picture class="hero-image">
+                    <img src="./assets/01.jpg" alt="Hero Image 1" />
+                </picture>
+
+                <!-- OSMO Curved Marquee -->
+                <div class="marquees">
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="2"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer="."
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee"
+                    >
+                        <h2 data-radial-text-marquee-text="" class="">Founder</h2>
+                    </div>
+
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="4"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer=" "
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee script"
+                    >
+                        <h3 data-radial-text-marquee-text="" class="red">Creator</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+                <picture class="hero-image">
+                    <img src="./assets/02.jpg" alt="Hero Image 2" />
+                </picture>
+
+                <!-- OSMO Curved Marquee -->
+                <div class="marquees">
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="2"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer="."
+                        data-radial-text-marquee-spacer-color="#EE2625"
+                        class="radial-text-marquee"
+                    >
+                        <h2 data-radial-text-marquee-text="" class="red">Producer</h2>
+                    </div>
+
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="4"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer=" "
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee script"
+                    >
+                        <h3 data-radial-text-marquee-text="" class="">Executive</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+                <picture class="hero-image">
+                    <img src="./assets/03.jpg" alt="Hero Image 3" />
+                </picture>
+
+                <!-- OSMO Curved Marquee -->
+                <div class="marquees">
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="2"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer="."
+                        data-radial-text-marquee-spacer-color="#EE2625"
+                        class="radial-text-marquee"
+                    >
+                        <h2 data-radial-text-marquee-text="" class="red">Psychic</h2>
+                    </div>
+
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="4"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer=" "
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee script"
+                    >
+                        <h3 data-radial-text-marquee-text="" class="">Celebrity</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Repeated First section for infinite scroll -->
+            <section class="hero" aria-hidden="true">
+                <picture class="hero-image" aria-hidden="true">
+                    <img src="./assets/01.jpg" alt="Hero Image 1 Duplicate" aria-hidden="true" />
+                </picture>
+
+                <!-- OSMO Curved Marquee -->
+                <div class="marquees">
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="2"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer="."
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee"
+                    >
+                        <h2 data-radial-text-marquee-text="" class="">Founder</h2>
+                    </div>
+
+                    <div
+                        data-radial-text-marquee-init=""
+                        data-radial-text-marquee-speed="4"
+                        data-radial-text-marquee-radius="8"
+                        data-radial-text-marquee-spacer=" "
+                        data-radial-text-marquee-spacer-color="#fff"
+                        class="radial-text-marquee script"
+                    >
+                        <h3 data-radial-text-marquee-text="" class="red">Creator</h3>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <nav>
+                    <a href="#">#gsap</a>
+                    <a href="#">#lenis</a>
+                    <a href="#">#infiniteScroll</a>
+                </nav>
+            </footer>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis-snap.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
