@@ -113,28 +113,6 @@ header, footer {
     }
 }
 
-@media (max-width: 700px) {
-    header, footer {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 1.2rem;
-        padding: 2.4rem;
-
-        & nav {
-            gap: 1.2rem;
-        }
-
-        & h1, & a {
-            font-size: 1rem;
-        }
-
-        & h1 {
-            text-wrap: balance;
-        }
-    }
-}
-
 
 header {
     --dir: bottom;
@@ -188,10 +166,31 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(12rem, 12vw, 24rem);
+    font-size: clamp(8rem, 12vw, 24rem);
     font-family: "Ms Madi", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Mobile Styling */
+@media (max-width: 700px) {
+    header, footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1.2rem;
+        padding: 2.4rem;
 
+        & nav {
+            gap: 1.2rem;
+        }
+
+        & h1, & a {
+            font-size: 1rem;
+        }
+
+        & h1 {
+            text-wrap: balance;
+        }
+    }
+}
