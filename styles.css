@@ -10,8 +10,14 @@
 
 /* Hide scrollbars for all elements */
 * {
+    margin: 0;
+	padding: 0;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
+    box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased; /* Enable subpixel antialiasing for better text rendering */
+	-moz-osx-font-smoothing: grayscale; /* Enable grayscale antialiasing for better text rendering */
+	text-rendering: geometricPrecision; /* Improve text rendering quality */
 }
 *::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera and Edge Chromium */
@@ -132,7 +138,7 @@ footer {
 
     &.script {
         position: absolute;
-        inset: 15% 0 0 0;
+        inset: 10% 0 0 0;
     }
 }
 
@@ -150,12 +156,14 @@ h2, h3 {
 
 h2 {
     font-size: clamp(12rem, 20vw, 32rem);
-    font-family: 'Druk';
+    font-family: 'Druk Trial', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 h3 {
-    font-size: clamp(12rem, 15vw, 24rem);
-    font-family: 'Distinct Style Script';
+    font-size: clamp(12rem, 12vw, 24rem);
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
 }

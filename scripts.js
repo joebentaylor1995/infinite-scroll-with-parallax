@@ -11,6 +11,7 @@ const setupLenis = () => {
         infinite: true,
         wrapper: wrapper,
         content: content,
+        syncTouch: true,
     });
 
     const snap = new Snap(lenis, {
@@ -71,7 +72,7 @@ const sectionAnimation = () => {
         const image = hero.querySelector('picture');
 
         // Grab the marquee element inside each hero
-        const marquee = hero.querySelector('svg');
+        const marquees = hero.querySelectorAll('svg');
 
         // DRY Animation values
         const ANIMATION = {
@@ -115,22 +116,42 @@ const sectionAnimation = () => {
             }
         );
 
-        // Marquee Scaling Animation
-        // Set initial scale
-        gsap.set(marquee, {
-            scale: ANIMATION.MARQUEE.before,
-        });
-        // Scale animate on scroll
-        gsap.fromTo(
-            marquee,
-            {
+
+        // // Marquee Scaling Animation
+        // // Set initial scale
+        // gsap.set(marquee, {
+        //     scale: ANIMATION.MARQUEE.before,
+        // });
+        // // Scale animate on scroll
+        // gsap.fromTo(
+        //     marquee,
+        //     {
+        //         scale: ANIMATION.MARQUEE.before,
+        //     },
+        //     {
+        //         scale: ANIMATION.MARQUEE.after,
+        //         ...SHARED_SETTINGS,
+        //     }
+        // );
+
+        marquees.forEach((marquee) => {
+            // Marquee Scaling Animation
+            // Set initial scale
+            gsap.set(marquee, {
                 scale: ANIMATION.MARQUEE.before,
-            },
-            {
-                scale: ANIMATION.MARQUEE.after,
-                ...SHARED_SETTINGS,
-            }
-        );
+            });
+            // Scale animate on scroll
+            gsap.fromTo(
+                marquee,
+                {
+                    scale: ANIMATION.MARQUEE.before,
+                },
+                {
+                    scale: ANIMATION.MARQUEE.after,
+                    ...SHARED_SETTINGS,
+                }
+            );
+        });
     });
 };
 
