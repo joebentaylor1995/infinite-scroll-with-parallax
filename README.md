@@ -1,3 +1,7 @@
+![Demo Preview](assets/01.jpg)
+
+
+
 # The Never Ending Story: Building a Seamless Infinite Scroll Experience with Lenis + GSAP
 
 This project is a simple front-end tutorial demo showing how to build:
