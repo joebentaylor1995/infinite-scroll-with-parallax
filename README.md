@@ -53,7 +53,7 @@ This is a static project, so you can open `index.html` directly in your browser.
 
 
 ## Connect
-**Joe Ben Taylor (this project author)**
+**Joe Ben Taylor**
 
 - [Dribbble](https://dribbble.com/joebentaylor)
 - [Website](https://joebentaylor.co.uk)
