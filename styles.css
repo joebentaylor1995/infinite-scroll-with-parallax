@@ -129,49 +129,6 @@ footer {
 }
 
 
-/* OSMO Curved Marquee Styling*/
-.marquees {
-    position: relative;
-    width: 100%;
-}
-
-
-.radial-text-marquee {
-    width: 100%;
-    transform: translateY(-60%);
-
-    &.script {
-        position: absolute;
-        inset: 10% 0 0 0;
-    }
-}
-
-
-h2, h3 {
-    text-align: center;
-    white-space: nowrap;
-    user-select: none;
-    color: var(--white);
-
-    &.red {
-        color: var(--red);
-    }
-}
-
-h2 {
-    font-size: clamp(12rem, 20vw, 32rem);
-    font-family: 'Druk Trial', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: clamp(8rem, 12vw, 24rem);
-    font-family: "Ms Madi", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* Mobile Styling */
 @media (max-width: 700px) {
     header, footer {
@@ -183,14 +140,6 @@ h3 {
 
         & nav {
             gap: 1.2rem;
-        }
-
-        & h1, & a {
-            font-size: 1rem;
-        }
-
-        & h1 {
-            text-wrap: balance;
         }
     }
 }
